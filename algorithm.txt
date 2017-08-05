@@ -1,0 +1,33 @@
+INPUT: As much info as possible about a specific person, a txt file of saved previous data from this script
+
+1. Load list of people into memory
+2. Output list of all people currently being dox_watched
+3. select # or [a]dd a person
+	3.a. Person # is selected:
+		3.a.1. Output list of personal data (view Figure 1)  	 
+		3.a.2. Select Data to change or refresh person
+			3.a.2.a.1 Prompt for data to be changed, confirm, accept
+			3.a.2.a.2 GOTO 1
+			3.a.2.b.1 Run all searches (Currently: Criminal, Social, Deep, Personal)
+			3.a.2.b.2 GOTO 1
+	3.b. Add a Person
+		3.b.1. Run through list of Personal data (view Figure 1), prompting for input on each, enter skips if unknown detail
+		3.b.2. On completion, reprint all typed data and ask for confirmation
+		3.b.3. Create person entry in txt file of saved data
+		3.b.4. GOTO 1
+OUTPUT: A doxxing of everything about that person cerca Indiana 
+
+
+----Figure 1----
+Name: Jane Doe
+Email: jdoe@gmail.com
+DLN: 012-345-678
+SSN: 123-45-6789
+DOB: 01-02-95
+Cell: 0001112345
+Handle: jdoe
+Gender: Female
+Criminal Record: WARRANT OUT ; 
+Social Search: 
+Deep Search:  
+----------------
