@@ -21,6 +21,7 @@ public class Criminal extends Search {
 	
 	/**
 	 * Check mycase database
+	 * https://public.courts.in.gov/mycase/#/vw/Search
 	 * @return list of charges
 	 */
 	List<String> checkMyCase(){
@@ -33,6 +34,18 @@ public class Criminal extends Search {
 	 */
 	boolean checkMostWanted(){
 		return warrentOut;
+	}
+
+	@Override
+	public String readable() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean readIn(String input) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }

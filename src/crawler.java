@@ -1,4 +1,3 @@
-import com.jaunt.Element;
 import com.jaunt.Elements;
 import com.jaunt.JauntException;
 import com.jaunt.ResponseException;

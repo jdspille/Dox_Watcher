@@ -38,6 +38,18 @@ public class Deep extends Search {
 		curLocation = coords;
 		return coords;
 	}
+
+	@Override
+	public String readable() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean readIn(String input) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 	
 	
 }

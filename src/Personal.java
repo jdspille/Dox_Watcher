@@ -29,4 +29,16 @@ public class Personal extends Search {
 		return null;
 	}
 
+	@Override
+	public String readable() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean readIn(String input) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }

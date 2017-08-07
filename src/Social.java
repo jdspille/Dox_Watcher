@@ -25,4 +25,17 @@ public class Social extends Search {
 		
 	}
 
+	@Override
+	public String readable() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean readIn(String input) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+
 }
