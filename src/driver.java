@@ -9,6 +9,9 @@ public class driver {
 		ArrayList<Person> classroom = new ArrayList<Person>();
 		Person temp = new Person("Spillers", "Joseph");
 		classroom.add(temp);
+		for(Person play : classroom) {
+			play.save();
+		}
 	}
 
 }

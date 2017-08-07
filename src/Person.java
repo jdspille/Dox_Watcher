@@ -13,6 +13,11 @@ public class Person {
 	private Deep deepHistory;
 	
 	public Person(String lastName, String firstName) {
+		handle=firstName;
+		crimHistory = new Criminal();
+		socHistory = new Social();
+		persHistory = new Personal();
+		deepHistory = new Deep();
 		read(lastName, firstName);
 	}
 
@@ -26,7 +31,7 @@ public class Person {
 	
 	public void save() {
 		try {
-			Writer wr = new FileWriter(new File("./Person/" + persHistory.lastName + "," + persHistory.firstName));
+			Writer wr = new FileWriter(new File("./Person/" + persHistory.lastName + "," + persHistory.firstName + ".txt"));
 			wr.write(handle);
 			wr.write(persHistory.readable());
 			wr.write(socHistory.readable());
@@ -52,6 +57,8 @@ public class Person {
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			System.out.println("Adding new Person");
+			persHistory.lastName = lastName;
+			persHistory.firstName = firstName;
 		}
 	}
 }
